@@ -38,3 +38,30 @@ reactive.
 
 Closed source, opening it up later this year. Built by 2ish developers.
 
+## Docker Networking
+
+Folks from Weaveworks, Flocker & ?
+
+Composition + Scheduling + Networking + ?
+
+```
+docker run --publish-server=service.network.weave your_net_cont
+docker run -v volume_name:/data --volume-driver=flocker your_state_cont
+```
+
+Plugins can run as docker containers, or as drivers. User-installed.
+You can access functionality via docker interface.
+
+Demo of flocker and weave as plugins. Allows moving of containers + storage
+across hosts while retaining dns lookups (via weave) and storage volumes
+(via flocker). Actually allows stopping and destroying containers, and
+then re-deploy them attached to the existing volumes, while seamlessly
+moving those volumes around between hosts.
+
+Plugins are integrated as JSON API servers listening on a unix
+domain socket.
+
+plugins-demo-2015.github.io
+
+
+
