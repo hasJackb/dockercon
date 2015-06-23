@@ -63,5 +63,9 @@ domain socket.
 
 plugins-demo-2015.github.io
 
+## Official Party
 
+* Talked a lot with guys from Rancher about what they're doing.
+* Met a guy from SIL, which is crazy because I met some of their
+people in Senegal during Peace Corps.
 
